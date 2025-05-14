@@ -41,7 +41,7 @@ With this dataset, I wanted to see how the GAN generalizes _up_ when pretrained 
 
 ### Results
 
-Below is a comparison of recolourization using encoders pretrained on CIFAR and ImageNet:
+Below is a comparison of recolourization using encoders pretrained on CIFAR and ImageNet after GAN training:
 
 <p align="center">
   <img src="images/diff_encoders_stl10.gif" alt="Result" width="500"/>
@@ -50,7 +50,7 @@ Below is a comparison of recolourization using encoders pretrained on CIFAR and 
 We can see that the generator using the ImageNet encoder is able to recolourize the images more convincingly than the one using the CIFAR encoder. This is likely because the ImageNet encoder has been trained on a larger and more diverse dataset, allowing it to learn more general features that can be applied to the STL10 dataset. The CIFAR encoder, on the other hand, has been trained on a smaller and less diverse dataset, making it less capable of generalizing to the STL10 dataset. Indeed, this is reflected in the L1 loss:
 
 <p align="center">
-  <img src="encoder_loss_differences.png" alt="Result" width="500"/>
+  <img src="images/encoder_loss_differences.png" alt="Result" width="500"/>
 </p>
 
 However, the ImageNet encoder generator still has some issues with colour consistency, seen in areas with low contrast and detail. This is likely due to a domain and resolution mismatch - its features are optimized for high-resolution, diverse natural images. As a result, the generator receives suboptimal feature representations, making it harder to accurately reconstruct STL-10-specific color distributions.
