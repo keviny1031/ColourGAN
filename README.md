@@ -2,7 +2,7 @@
 
 ## Description
 
-The goal of this project was to apply what I had learned about CNNs and GANs to a classic problem. However, due to time and hardware constraints, I was drawn to Moein Shariatnia's approach as highlighted in their [Medium article](https://medium.com/data-science/colorizing-black-white-images-with-u-net-and-conditional-gan-a-tutorial-81b2df111cd8). Specifically, I wanted to explore 2 cases:
+The goal of this project was to apply what I had learned about CNNs and GANs on the classic problem of image colouring. I was especially drawn to Moein Shariatnia's approach as highlighted in their [Medium article](https://medium.com/data-science/colorizing-black-white-images-with-u-net-and-conditional-gan-a-tutorial-81b2df111cd8) due to its light demand on computer hardware. Specifically, I wanted to explore 2 cases:
 
 1. **Case 1**: Using a pre-trained encoder trained on the same dataset as train/test.
 2. **Case 2**: Using a pre-trained encoder trained on a different, lower/higher resolution dataset than train/test.
